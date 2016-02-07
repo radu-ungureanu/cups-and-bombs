@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="18633RaduUngureanu.CupsandBombs-TheGame" Publisher="CN=E41AA760-384D-4428-A849-9CF8CE37A53E" Version="1.1.0.7" />
+  <Properties>
+    <DisplayName>Cups and Bombs - The Game</DisplayName>
+    <PublisherDisplayName>Radu Ungureanu</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="CupsAndBombs.App">
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+      <m2:VisualElements DisplayName="Cups and Bombs" Description="Cups and bombs" BackgroundColor="#464646" ForegroundText="dark" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png">
+        <m2:DefaultTile Wide310x150Logo="Assets\WideLogo.png">
+        </m2:DefaultTile>
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+</Package>
